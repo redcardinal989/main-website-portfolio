@@ -45,7 +45,26 @@
     <div class="project-container">
       <div class="project-item">
         <div class="project-image">
-          <img src="watchlist.png" alt="watchlist project">
+          <!-- Watchlist Carousel -->
+          <div class="slideshow-container watchlist-carousel">
+            <div class="mySlides fade watchlist-slide">
+              <img src="watchlist.png" alt="Watchlist Project Slide 1">
+            </div>
+            
+            <div class="mySlides fade watchlist-slide">
+              <img src="Application Form.png" alt="Watchlist Project Slide 2">
+            </div>
+
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusWatchlistSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusWatchlistSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots for slide indicators -->
+          <div class="dots-container watchlist-dots">
+            <span class="dot watchlist-dot" onclick="currentWatchlistSlide(1)"></span>
+            <span class="dot watchlist-dot" onclick="currentWatchlistSlide(2)"></span>
+          </div>
         </div>
         <div class="project-description">
           <h3>Watchlist Project</h3>
@@ -56,10 +75,46 @@
       <div class="project-container">
       <div class="project-item">
         <div class="project-image">
-          <img src="Restaurants.png" alt="Restaurants Project">
+          <!-- Slideshow Container -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="Restaurants.png" alt="Restaurants Project Slide 1">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Restaurant Order Page.png" alt="Restaurants Project Slide 2">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Restaurant Reservations page.png" alt="Restaurants Project Slide 3">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Restaurant About page.png" alt="Restaurants Project Slide 4">
+            </div>
+
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots for slide indicators -->
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
         </div>
         <div class="project-description">
           <h3>Restaurants Project</h3>
           <p>A responsive restaurant website built with HTML, CSS, and JavaScript.</p>
         </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
       </div>
